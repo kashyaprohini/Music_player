@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Music</title>
+    <script src="https://kit.fontawesome.com/b947931217.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="music_player">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+
+                </div>
+            </nav>
+            <img src="whosays.webp" class="song-img">
+            <h1>Who Says</h1>
+            <p>Selena Gomez & The Scene</p>
+            <audio  id="song">
+                <source src="Selena_Gomez___The_Scene_-_Who_Says(128k).m4a">
+            </audio>
+            <input type="range" value="0"  id="progress">
+            <div class="control">
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playpause()"><i class="fa-solid fa-play" id="ctrlicon"></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
